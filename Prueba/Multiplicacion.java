@@ -1,5 +1,7 @@
 package Prueba;
+
 import java.util.Scanner;
+
 public class Multiplicacion {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
