@@ -11,6 +11,7 @@ public class Division {
         int num2 = scanner.nextInt();
         int resultado = num1 / num2;
         System.out.println("La division de " + num1 + " y " + num2 + " es: " + resultado);
+        System.out.println("La divicion de " + num1 + " y " + num2 + " es: " + resultado);
         scanner.close();
     }
 }
