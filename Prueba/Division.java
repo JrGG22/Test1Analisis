@@ -8,7 +8,7 @@ public class Division {
         System.out.println("Segundo numero para dividir:");
         int num2 = scanner.nextInt();
         int resultado = num1 / num2;
-        System.out.println("La restar de " + num1 + " y " + num2 + " es: " + resultado);
+        System.out.println("La divicion de " + num1 + " y " + num2 + " es: " + resultado);
         scanner.close();
     }
 }
