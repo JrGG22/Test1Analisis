@@ -9,9 +9,13 @@ public class Division {
         int num1 = scanner.nextInt();
         System.out.println("Segundo numero para dividir:");
         int num2 = scanner.nextInt();
-        int resultado = num1 / num2;
-        System.out.println("La division de " + num1 + " y " + num2 + " es: " + resultado);
-        System.out.println("La divicion de " + num1 + " y " + num2 + " es: " + resultado);
+        
+        if (num2 == 0) {
+            System.out.println("Error: No se puede dividir por cero.");
+        } else {
+            double resultado = (double) num1 / num2;
+            System.out.printf("La división de %d y %d es: %.2f%n", num1, num2, resultado);
+        }
         scanner.close();
     }
 }
