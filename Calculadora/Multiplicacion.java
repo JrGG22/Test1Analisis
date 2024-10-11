@@ -3,14 +3,23 @@ package Calculadora;
 import java.util.Scanner;
 
 public class Multiplicacion {
-    public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        System.out.println("Primer numero para Multiplicar:");
+    private Scanner scanner;
+
+    public Multiplicacion() {
+        scanner = new Scanner(System.in);
+    }
+
+    public void realizarMultiplicacion() {
+        System.out.println("Primer numero para multiplicar:");
         int num1 = scanner.nextInt();
-        System.out.println("Segundo numero para Multiplicar:");
+        System.out.println("Segundo numero para multiplicar:");
         int num2 = scanner.nextInt();
+        
         int resultado = num1 * num2;
-        System.out.println("La multiplicacion de " + num1 + " y " + num2 + " es: " + resultado);
+        System.out.printf("La multiplicación de %d y %d es: %d%n", num1, num2, resultado);
+    }
+
+    public void cerrarScanner() {
         scanner.close();
     }
 }

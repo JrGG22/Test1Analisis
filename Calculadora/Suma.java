@@ -3,14 +3,21 @@ package Calculadora;
 import java.util.Scanner;
 
 public class Suma {
-    public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
+    private Scanner scanner;
+
+    public Suma() {
+        scanner = new Scanner(System.in);
+    }
+    public void realizarSuma() {
         System.out.println("Primer numero para sumar:");
         int num1 = scanner.nextInt();
         System.out.println("Segundo numero para sumar:");
         int num2 = scanner.nextInt();
+        
         int resultado = num1 + num2;
-        System.out.println("La suma de " + num1 + " y " + num2 + " es: " + resultado);
+        System.out.printf("La suma de %d y %d es: %d%n", num1, num2, resultado);
+    }
+    public void cerrarScanner() {
         scanner.close();
     }
 }

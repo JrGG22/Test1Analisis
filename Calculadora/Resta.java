@@ -3,14 +3,21 @@ package Calculadora;
 import java.util.Scanner;
 
 public class Resta {
-    public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
+    private Scanner scanner;
+
+    public Resta() {
+        scanner = new Scanner(System.in);
+    }
+    public void realizarResta() {
         System.out.println("Primer numero para restar:");
         int num1 = scanner.nextInt();
         System.out.println("Segundo numero para restar:");
         int num2 = scanner.nextInt();
+        
         int resultado = num1 - num2;
-        System.out.println("La resta de " + num1 + " y " + num2 + " es: " + resultado);
+        System.out.printf("La resta de %d y %d es: %d%n", num1, num2, resultado);
+    }
+    public void cerrarScanner() {
         scanner.close();
     }
 }
