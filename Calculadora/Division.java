@@ -3,8 +3,13 @@ package Calculadora;
 import java.util.Scanner;
 
 public class Division {
-    public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
+    private Scanner scanner;
+
+    public Division() {
+        scanner = new Scanner(System.in);
+    }
+
+    public void realizarDivision() {
         System.out.println("Primer numero para dividir:");
         int num1 = scanner.nextInt();
         System.out.println("Segundo numero para dividir:");
@@ -16,6 +21,9 @@ public class Division {
             double resultado = (double) num1 / num2;
             System.out.printf("La división de %d y %d es: %.2f%n", num1, num2, resultado);
         }
+    }
+
+    public void cerrarScanner() {
         scanner.close();
     }
 }
