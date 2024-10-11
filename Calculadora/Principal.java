@@ -16,7 +16,7 @@ public class Principal {
         System.out.println("2. Resta");
         System.out.println("3. Multiplicación");
         System.out.println("4. División");
-        System.out.println("5. Potencia");
+        System.out.println("5. Potenci");
         System.out.println("6. Residuo");
         int opcion = scanner.nextInt();
         
