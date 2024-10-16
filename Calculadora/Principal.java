@@ -9,7 +9,7 @@ public class Principal {
         Resta resta = new Resta();
         Multiplicacion multiplicacion = new Multiplicacion();
         Division division = new Division();
-        
+
         Scanner scanner = new Scanner(System.in);
         System.out.println("Seleccione una operación:");
         System.out.println("1. Suma");
@@ -18,10 +18,9 @@ public class Principal {
         System.out.println("4. División");
         System.out.println("5. Potencia");
         System.out.println("5. Potenci");
-
         System.out.println("6. Residuo");
         int opcion = scanner.nextInt();
-        
+
         switch (opcion) {
             case 1:
                 suma.realizarSuma();
